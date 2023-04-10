@@ -1,1 +1,1 @@
-# cosmetics-classification
+# Predicting Prices Using Neural Networks for Regression Analysis
