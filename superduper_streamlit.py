@@ -13,6 +13,7 @@ from sklearn.neighbors import NearestNeighbors
 
 # Load the data
 df_ing = pd.read_csv("data/products_data.csv")
+df_ing = df_ing.sort_values(['brand', 'product_names'], ascending=(False, False))
 
 # Load the pickle file containing the features
 with open("features.pkl", "rb") as f:
