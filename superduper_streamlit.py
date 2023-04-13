@@ -8,7 +8,23 @@ offers another that is both similar and cheaper.
 
 import streamlit as st
 from streamlit import session_state as session
-from notebook_4 import SuperDuper
+
+# define function
+def SuperDuper(product_name):
+    product_list = []
+    product_id = df_ing[df_ing["product_names"] == product_name].index
+    product_id = product_id[0]
+    product_price = df_ing["price"].iloc[product_id] 
+    for newid in idlist[product_id]:
+        name = df_ing.loc[newid].product_names
+        brand = df_ing.loc[newid].brand
+        price = df_ing.loc[newid].price
+        if name == product_name:
+            pass
+        elif price < product_price:
+            product_list.append(f"{name} from {brand}, ${price: .2f}")
+        
+    return product_list   
 
 
 dataframe = None
