@@ -9,6 +9,7 @@ offers another that is both similar and cheaper.
 import pandas as pd
 import streamlit as st
 import pickle
+from sklearn.neighbors import KNeighborsClassifier, NearestNeighbors
 
 # Load the data
 df_ing = pd.read_csv("data/products_data.csv")
