@@ -40,6 +40,7 @@ def SuperDuper(product_name):
     return product_list 
 
 st.title('SuperDuper')
+st.write("A duping app for your favorite overpriced skincare product! :heart")
 
 # Create the dropdown menus
 brands = df_ing.brand.unique()
