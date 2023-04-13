@@ -25,7 +25,7 @@ dist, idlist = model.kneighbors(features)
     
 def SuperDuper(product_name):
     product_list = []
-    product_id = products[products["product_names"] == product_name].index
+    product_id = df_ing[df_ing["product_names"] == product_name].index
     product_id = product_id[0]
     product_price = products["price"].iloc[product_id] 
     for newid in idlist[product_id]:
