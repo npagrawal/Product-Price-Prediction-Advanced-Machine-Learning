@@ -54,6 +54,6 @@ results = SuperDuper(selected_product)
 if len(results) == 0:
     st.write("No similar products found in database. We will update when we have more products.")
 else:
-    st.write("Similar products:")
+    st.write("DUUUUUUUUUUUUPE:")
     for product in results:
         st.write(product)
