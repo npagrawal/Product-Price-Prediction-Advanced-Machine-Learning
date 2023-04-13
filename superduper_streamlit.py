@@ -9,7 +9,6 @@ offers another that is both similar and cheaper.
 import pandas as pd
 import streamlit as st
 import pickle
-from sklearn.neighbors import KNeighborsClassifier
 from sklearn.neighbors import NearestNeighbors
 
 
