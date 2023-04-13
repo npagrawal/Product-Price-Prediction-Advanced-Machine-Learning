@@ -5,7 +5,7 @@ i.e. users choose an expensive product and the SuperDuper
 offers another that is both similar and cheaper.
 
 """
-
+!pip install sklearn
 import pandas as pd
 import streamlit as st
 import pickle
