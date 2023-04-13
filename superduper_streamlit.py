@@ -8,7 +8,6 @@ offers another that is both similar and cheaper.
 
 import streamlit as st
 from streamlit import session_state as session
-%run notebook_4.ipynb
 from notebook_4 import SuperDuper
 
 
