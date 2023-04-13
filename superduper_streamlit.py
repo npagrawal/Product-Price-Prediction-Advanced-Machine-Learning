@@ -7,9 +7,15 @@ offers another that is both similar and cheaper.
 """
 
 import streamlit as st
-from streamlit import session_state as session
+import pandas as pd
 
-# define function
+products_data = pd.read_csv("data/products_data.csv")
+features = pd.read_csv("data/features.csv")
+
+model = NearestNeighbors(n_neighbors=2, algorithm='ball_tree')
+model.fit(features)
+dist, idlist = model.kneighbors(features)
+
 def SuperDuper(product_name):
     product_list = []
     product_id = df_ing[df_ing["product_names"] == product_name].index
@@ -24,54 +30,13 @@ def SuperDuper(product_name):
         elif price < product_price:
             product_list.append(f"{name} from {brand}, ${price: .2f}")
         
-    return product_list   
+    return product_list 
 
+brand_list = products_data["brand"].values
+selected_brand = st.selectbox( "Choose a brand from the dropdown menu", brand_list )
+product_list = products_data["product_names"].values
+selected_product = st.selectbox( "Choose a brand from the dropdown menu", product_list )
 
-dataframe = None
-
-@st.cache(persist=True, show_spinner=False, suppress_st_warning=True)
-def load_data():
-    """
-    load and cache data
-    :return: products data
-    """
-    features = pd.read_csv("data/features.csv", index_col=0)
-    return features
-
-
-features = load_data()
-
-with open("data/products_data.pickle", "rb") as f:
-    products = pickle.load(f)
-
-
-st.title('SuperDuper')
-st.text('Dupe your favorite skincare product!')
-
-st.text("")
-st.text("")
-st.text("")
-st.text("")
-
-session.options = st.multiselect(label="Choose a brand from the dropdown menu", options=products["brand"])
-
-st.text("")
-st.text("")
-
-session.options = st.multiselect(label="Now choose a product", options=products["product_names"])
-
-st.text("")
-st.text("")
-
-is_clicked = col1.button(label="Recommend")
-
-if is_clicked:
-    dataframe = SuperDuper(session.options, product_name=products["product_names"])
-
-st.text("")
-st.text("")
-st.text("")
-st.text("")
-
-if dataframe is not None:
-    st.table(dataframe)
+if st.button('Dupe!'):
+      recommended_products = SuperDuper(selected_product)
+      recommended_products
