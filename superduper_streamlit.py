@@ -36,7 +36,7 @@ def SuperDuper(product_name):
         if name == product_name:
             pass
         elif price < product_price:
-            product_list.append(f"{name} from {brand}, ${price:.2%}")
+            product_list.append(f"{name} from {brand}, ${price:.2}")
         
     return product_list 
 
