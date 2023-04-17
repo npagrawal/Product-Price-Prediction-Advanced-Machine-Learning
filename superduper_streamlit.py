@@ -42,15 +42,7 @@ def SuperDuper(product_name):
 
 st.title('SuperDuper')
 st.write("A duping app for your favorite overpriced skincare product! 🧴")
-file_ = open("/images/PrincessDiaries.gif", "rb")
-contents = file_.read()
-data_url = base64.b64encode(contents).decode("utf-8")
-file_.close()
-
-st.markdown(
-    f'<img src="data:image/gif;base64,{data_url}" alt="princess diaries">',
-    unsafe_allow_html=True,
-)
+st.markdown("![Alt Text](https://assets.vogue.com/photos/5be9f45a6bcde32d294138f6/master/w_1600,c_limit/00-story-beauty-gifts.gif)")
 
 # Create the dropdown menus
 brands = df_ing.brand.unique()
