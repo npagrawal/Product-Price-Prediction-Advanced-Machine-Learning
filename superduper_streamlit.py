@@ -42,6 +42,7 @@ def SuperDuper(product_name):
 
 st.title('SuperDuper')
 st.write("A duping app for your favorite overpriced skincare product! 🧴")
+st.markdown("![Alt Text](https://assets.vogue.com/photos/5be9f45a6bcde32d294138f6/master/w_1600,c_limit/00-story-beauty-gifts.gif)")
 
 # Create the dropdown menus
 brands = df_ing.brand.unique()
@@ -52,7 +53,7 @@ selected_product = st.selectbox("Now pick a product", brand_products)
 # Call the SuperDuper function with the selected product and display the results
 results = SuperDuper(selected_product)
 if len(results) == 0:
-    st.write("No similar products found in database. We will update when we have more products.")
+    st.write("You already found the cheapest product! Well done, you.")
 else:
     st.write("DUUUUUUUUUUUUPE:")
     for product in results:
