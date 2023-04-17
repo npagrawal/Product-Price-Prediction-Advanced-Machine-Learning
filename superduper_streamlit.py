@@ -42,6 +42,7 @@ def SuperDuper(product_name):
 
 st.title('SuperDuper')
 st.write("A duping app for your favorite overpriced skincare product! 🧴")
+st.markdown("![Alt Text](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWJhZGQ1Mzc4YmM3NjlkMjQ3NTRmNzk1MzRiNjY0YjRiYjQwYjI0MSZjdD1n/bJfb0wtSS4zQRZqpTd/giphy.gif)")
 
 # Create the dropdown menus
 brands = df_ing.brand.unique()
