@@ -52,7 +52,7 @@ selected_product = st.selectbox("Now pick a product", brand_products)
 # Call the SuperDuper function with the selected product and display the results
 results = SuperDuper(selected_product)
 if len(results) == 0:
-    st.write("No similar products found in database. We will update when we have more products.")
+    st.write("You already found the cheapest product! Well done, you.")
 else:
     st.write("DUUUUUUUUUUUUPE:")
     for product in results:
