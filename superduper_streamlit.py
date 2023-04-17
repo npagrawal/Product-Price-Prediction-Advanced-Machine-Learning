@@ -42,13 +42,13 @@ def SuperDuper(product_name):
 
 st.title('SuperDuper')
 st.write("A duping app for your favorite overpriced skincare product! 🧴")
-
-file_ = open("images/princessdiaries.gif", "rb")
+file_ = open("/images/PrincessDiaries.gif", "rb")
 contents = file_.read()
 data_url = base64.b64encode(contents).decode("utf-8")
 file_.close()
 
-st.markdown(f'<img src="data/PrincessDiaries.gif">',
+st.markdown(
+    f'<img src="data:image/gif;base64,{data_url}" alt="princess diaries">',
     unsafe_allow_html=True,
 )
 
