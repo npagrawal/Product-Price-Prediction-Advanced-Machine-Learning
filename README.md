@@ -12,4 +12,4 @@ I put all these findings together into the Streamlit app SuperDuper which offers
 
 
 
-Find the app here: https://npagrawal-product-price-prediction--superduper-streamlit-ftfs2j.streamlit.app/
+[Find the app here:](https://npagrawal-product-price-prediction--superduper-streamlit-ftfs2j.streamlit.app/)
