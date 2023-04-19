@@ -36,7 +36,7 @@ def SuperDuper(product_name):
         if name == product_name:
             pass
         elif price < product_price:
-            product_list.append(f"{name} from {brand}, ${price}")
+            product_list.append(f"{name} from {brand}, ${price:.2f}")
         
     return product_list 
 
@@ -46,7 +46,7 @@ st.markdown("![Alt Text](https://assets.vogue.com/photos/5be9f45a6bcde32d294138f
 
 # Create the dropdown menus
 brands = df_ing.brand.unique()
-selected_brand = st.selectbox("Choose a brand from the dropdown menu", brands)
+selected_brand = st.selectbox("Choose a brand", brands)
 brand_products = df_ing[df_ing.brand == selected_brand].product_names.unique()
 selected_product = st.selectbox("Now pick a product", brand_products)
 
