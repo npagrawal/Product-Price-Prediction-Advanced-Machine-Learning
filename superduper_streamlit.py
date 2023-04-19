@@ -48,12 +48,6 @@ st.markdown("![Alt Text](https://assets.vogue.com/photos/5be9f45a6bcde32d294138f
 # Create the dropdown menus
 brands = df_ing.brand.unique()
 selected_brand = st.selectbox("Choose a brand", brands)
-progress_text = "Loading products."
-my_bar = st.progress(0, text=progress_text)
-
-for percent_complete in range(100):
-    time.sleep(0.1)
-    my_bar.progress(percent_complete + 1, text=progress_text)
 
 brand_products = df_ing[df_ing.brand == selected_brand].product_names.unique()
 selected_product = st.selectbox("Now pick a product", brand_products)
