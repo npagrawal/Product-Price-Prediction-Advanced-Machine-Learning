@@ -13,3 +13,17 @@ I put all these findings together into the Streamlit app SuperDuper which offers
 
 
 [Find the app here.](https://npagrawal-product-price-prediction--superduper-streamlit-ftfs2j.streamlit.app/)
+
+## Repository Structure
+```
+├── data
+├── images
+├── scraping
+├── Analysis_Notebook.ipynb
+├── README.md
+├── features.pkl
+├── products_data.pkl
+├── requirements.txt
+├── superduper_streamlit.py
+└── presentation.pdf
+```
