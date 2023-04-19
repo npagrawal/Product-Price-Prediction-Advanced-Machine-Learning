@@ -2,8 +2,7 @@
 <img src="images/PrincessDiaries.gif" width="750" align="center">
 
 ## Overview
-
-The cosmetics industry brought in an estimated $262.21 billion in 2022 and is due to continue growing this year. Skincare in particular has seen an increased interest as the culture has shifted away from the glam beauty standards of the recession-era 2000s to embrace a more "natural" beauty.
+According to Clarkston Consulting, the global skincare market was worth $146 billion in 2021 and is expected to grow to $207.22 billion by 2028. Skincare in particular has seen an increased interest as the culture has shifted away from the glam beauty standards of the recession-era 2000s to embrace a more "natural" beauty.
 
 My stakeholder, Inner Glow Inc., wants to make their mark on the skincare industry by coming out with their own line of products that are competetive with what's available. To do this, they first need to understand the current market and determine where they can undercut more expensive alternatives. Rampant upcharge in the skincare industry is obvious when products can range from $7-400. How can Inner Glow Inc. offer mid-line products that capture both a high-end and low-end market?
 
