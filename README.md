@@ -1,4 +1,4 @@
-# Predicting Prices Using Neural Networks for Regression Analysis
+# Predicting Prices in Skincare Using Advanced Machine Learning
 <img src="images/PrincessDiaries.gif" width="750" align="center">
 
 ## Overview
