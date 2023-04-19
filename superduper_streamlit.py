@@ -9,7 +9,7 @@ import pandas as pd
 import streamlit as st
 import pickle
 from sklearn.neighbors import NearestNeighbors
-
+import time
 
 # Load the data
 df_ing = pd.read_csv("data/products_data.csv")
@@ -47,8 +47,21 @@ st.markdown("![Alt Text](https://assets.vogue.com/photos/5be9f45a6bcde32d294138f
 # Create the dropdown menus
 brands = df_ing.brand.unique()
 selected_brand = st.selectbox("Choose a brand", brands)
+progress_text = "Loading products."
+my_bar = st.progress(0, text=progress_text)
+
+for percent_complete in range(100):
+    time.sleep(0.1)
+    my_bar.progress(percent_complete + 1, text=progress_text)
+
 brand_products = df_ing[df_ing.brand == selected_brand].product_names.unique()
 selected_product = st.selectbox("Now pick a product", brand_products)
+progress_text = "Finding dupes."
+my_bar = st.progress(0, text=progress_text)
+
+for percent_complete in range(100):
+    time.sleep(0.1)
+    my_bar.progress(percent_complete + 1, text=progress_text)
 
 # Call the SuperDuper function with the selected product and display the results
 results = SuperDuper(selected_product)
