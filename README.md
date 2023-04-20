@@ -26,7 +26,7 @@ Features engineering determines certain ingredients, like Urea, have a marginal 
 
 ## Recommendations and Next Steps
 
-The most often overpriced brands are iS Clinical, Clarins, and SK-II, while the most underpriced ones are Neutrogena, Clinique, and L'Oreal Paris. Therefore, Inner Beauty Inc. should try to dupe the overpriced brands' products with prices that are on average higher than the underpriced ones.
+The most often overpriced brands are La Prairie, Dr. Brandt, and Shiseido, while the most underpriced ones are Neutrogena, Shiseido, and Mary Kay. Therefore, Inner Beauty Inc. should try to dupe the overpriced brands' products with prices that are on average higher than the underpriced ones.
 
 For next steps, I'd like to dig more deeply into the ingredients to determine which combinations of ingredients are the most profitable. I'd also like to look at packaging using image classification since packaging signals the quality of the product to customers. Finally, I'd want to determine which categories Inner Beauty should focus on.
 
