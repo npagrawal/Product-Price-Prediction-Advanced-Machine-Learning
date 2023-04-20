@@ -41,10 +41,10 @@ I put all my findings together into the Streamlit app SuperDuper which offers us
 ├── images
 ├── scraping
 ├── Analysis_Notebook.ipynb
+├── Price Prediction In Skincare Using Neural Networks.pdf
 ├── README.md
 ├── features.pkl
 ├── products_data.pkl
 ├── requirements.txt
-├── superduper_streamlit.py
-└── presentation.pdf
+└── superduper_streamlit.py
 ```
