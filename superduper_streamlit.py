@@ -26,8 +26,6 @@ dist, idlist = model.kneighbors(features)
     
 def SuperDuper(product_name):
     product_list = []
-    prices = []
-    savings = []
     product_id = df_ing[df_ing["product_names"] == product_name].index
     product_id = product_id[0]
     product_price = df_ing["price"].iloc[product_id] 
@@ -39,13 +37,9 @@ def SuperDuper(product_name):
         if name == product_name:
             pass
         elif price_diff > 10:
-            product_list.append(f"{name} from {brand}")
-            prices.append("$, (price:.2f)")
-            saving.append("$, (price_diff:.2f)")
+            product_list.append(f"{name} from {brand}, ${price:.2f with ${price_diff:.2f} savings")
         
     return product_list
-    return prices
-    return saving
 
 st.title('SuperDuper')
 st.write("A duping app for your favorite overpriced skincare product! 🧴")
