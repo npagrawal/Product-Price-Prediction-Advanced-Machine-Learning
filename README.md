@@ -44,7 +44,6 @@ I put all my findings together into the Streamlit app SuperDuper which offers us
 ├── README.md
 ├── features.pkl
 ├── presentation.pdf
-├── products_data.pkl
 ├── requirements.txt
 └── superduper_streamlit.py
 ```
