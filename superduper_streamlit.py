@@ -36,7 +36,7 @@ def SuperDuper(product_name):
         price_diff = product_price - price
         if name == product_name:
             pass
-        elif product_price - price > 10:
+        elif price_diff > 10:
             product_list.append(f"{name} from {brand}, ${price: .2f}, saving ${price_diff: .2f}")
         
     return product_list   
